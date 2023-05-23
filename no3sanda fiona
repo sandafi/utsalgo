@@ -1,0 +1,107 @@
+/*
+ NAMA : SANDA FIONA
+ NPM : 227064516091
+
+UTS ALGORITMA NO 3
+ */
+import java.util.Scanner; 
+public class UTSalgoNo3 {
+    public static void main(String[] args) {
+    
+    Scanner input = new Scanner(System.in); 
+    
+    
+    int Pilihan, JumlahTiket,Harga,uang;
+    int Total=0;
+    float kembalian;
+
+      System.out.println("## COLDPLAY MUSIC of SPHERES ##"); 
+      System.out.println("========== WORLD TOUR ==========");
+      System.out.println("GELORA BUNG KARNO STADIUM JAKARTA");
+      System.out.println();
+
+      System.out.println("Kategori tiket yang tersedia : ");
+      System.out.println("1.  Category 1 (Rp5.000.000)");
+      System.out.println("2.  Category 2 (Rp4.000.000)");
+      System.out.println("3.  Category 3 (Rp3.250.000)");
+      System.out.println("4.  Category 4 (Rp2.500.000)");
+      System.out.println();
+    
+      System.out.print("Pilih kategori tiket (1-4): ");
+      Pilihan = input.nextInt();
+      System.out.print("Masukan jumlah tiket : ");
+      JumlahTiket= input.nextInt();
+
+      switch (Pilihan){   
+        case 1:
+                System.out.println("================================"); 
+                System.out.println("        INVOICE PEMBELIAN       ");
+                System.out.println("===============================");
+		System.out.println("Kategori tiket : Category 1 ");
+                System.out.print("Jumlah Tiket): ");
+                JumlahTiket=input.nextInt();
+                Harga= 5000000*JumlahTiket;
+                Total=Total+Harga;
+                System.out.println("Harga tiket : Rp. "+Harga);
+                System.out.println("================================");
+                System.out.print("Masukan jumlah uang yang akan dibayar :  ");
+                uang=input.nextInt();
+                kembalian=uang-Total;
+                System.out.println("Kembalian   : Rp. "+kembalian);
+                System.out.println("================================");
+	break ;
+        case 2: 
+                System.out.println("================================"); 
+                System.out.println("        INVOICE PEMBELIAN       ");
+                System.out.println("===============================");
+		System.out.println("Kategori tiket : Category 2 ");
+                 System.out.print("Jumlah Tiket   : ");
+                JumlahTiket=input.nextInt();
+                Harga= 4000000*JumlahTiket;
+                Total=Total+Harga;
+                System.out.println("Harga tiket : Rp. "+Harga);
+                System.out.println("================================");
+                System.out.print("Masukan jumlah uang yang akan dibayar :  ");
+                uang =input.nextInt();
+                kembalian=uang-Total;
+                System.out.println("Kembalian   : Rp. "+kembalian);
+                System.out.println("================================");
+    break;                     
+        case 3:
+                System.out.println("================================"); 
+                System.out.println("        INVOICE PEMBELIAN       ");
+                System.out.println("===============================");
+		System.out.println("Kategori tiket : Category 3 ");
+                System.out.print("Jumlah Tiket   : ");
+                JumlahTiket=input.nextInt();
+                Harga= 3250000*JumlahTiket;
+                Total=Total+Harga;
+                System.out.println("Harga tiket : Rp. "+Harga);
+                System.out.println("================================");
+                System.out.print("Masukan jumlah uang yang akan dibayar :  ");
+                uang=input.nextInt();
+                kembalian=uang-Total;
+                System.out.println("Kembalian   : Rp"+kembalian);
+                System.out.println("================================");
+    break;                     
+        case 4:
+                System.out.println("================================"); 
+                System.out.println("        INVOICE PEMBELIAN       ");
+                System.out.println("===============================");
+		System.out.println("Kategori tiket : Category 4 ");
+                System.out.print("Jumlah Tiket   : ");
+                JumlahTiket=input.nextInt();
+                Harga= 2500000*JumlahTiket;
+                Total=Total+Harga;
+                System.out.println("Harga tiket : Rp. "+Harga);
+                System.out.println("================================");
+                System.out.print("Masukan jumlah uang yang akan dibayar :  ");
+                uang=input.nextInt();
+                kembalian=uang-Total;
+                System.out.println("Kembalian   : Rp"+kembalian);
+                System.out.println("================================");
+    break;                     
+        }
+    }
+    
+}
